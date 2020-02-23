@@ -1,3 +1,26 @@
+/* General */
 body {
   padding-top: 75px;
+  height: 5000px;
+}
+
+/* Blockquote */
+#home-quote {
+  background: url(../img/bg-quote.jpg) center center;
+  background-size: cover;
+}
+
+@media(max-width: 767px) {
+  #home-quote p {
+    font-size: 2.5rem;
+  }
+
+  body {
+    padding-top: 0px;
+  }
+
+  .fixed-top {
+    position: relative;
+  }
+
 }
