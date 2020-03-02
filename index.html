@@ -11,6 +11,40 @@
 
 <body>
 
+  <!-- Início Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input 
+              type="email" class="form-control" id="Email">
+            </div>
+            <div class="form-group">
+              <label for="Senha">Senha</label>
+              <input type="password" class="form-control" id="Senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a></small>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fecha Modal -->
+
   <!-- Menu - Início -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm py-3">
     <a href="index.html" class="navbar-brand">
@@ -39,7 +73,7 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -174,7 +208,7 @@
   <!-- Section Blockquote - Fim -->
 
   <!-- Section Perguntas Frequentes - Início -->
-  <section class="container">
+  <section class="container mb-5">
     <div class="my-5 text-center">
       <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
       <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
@@ -273,9 +307,12 @@
         <div class="col-md-2">
           <h4 class="h6">REDES SOCIAIS</h4>
           <ul class="list-unstyled">
-            <li><a class=" btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width: 140px;"  href="#">Facebook</a></li>
-            <li><a class=" btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width: 140px;" href="#">Twitter</a></li>
-            <li><a class=" btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width: 140px;" href="#">Youtube</a></li>
+            <li><a class=" btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width: 140px;"
+                href="#">Facebook</a></li>
+            <li><a class=" btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width: 140px;"
+                href="#">Twitter</a></li>
+            <li><a class=" btn btn-outline-secondary mb-2 btn-sm btn-block" style="max-width: 140px;"
+                href="#">Youtube</a></li>
           </ul>
         </div>
 
@@ -287,18 +324,6 @@
     </div>
 
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
